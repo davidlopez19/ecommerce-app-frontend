@@ -5,7 +5,17 @@
   "projects": {
     "ecommerce-app-frontend": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -25,6 +35,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeflex/primeflex.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -91,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a13e6c53-57a4-4630-ad91-59d2352bdbcf"
   }
 }

@@ -1,0 +1,32 @@
+<div class="formgroup-inline">
+    <div class="field col">
+      <label for="nombre">Nombre</label>
+      <input pInputText id="nombre" [(ngModel)]="client.nombre" />
+    </div>
+    <div class="field col">
+      <label for="Correo">Correo</label>
+      <input pInputText id="Correo" [(ngModel)]="client.correo" />
+    </div>
+
+    <div class="field col">
+      <label for="password">Contrasena</label>
+      <input type="password" pInputText id="password" [(ngModel)]="client.password" />
+    </div>
+  
+    <div class="field col">
+        <label for="telefono">Telefono</label>
+        <input pInputText id="telefono" [(ngModel)]="client.telefono" />
+    </div>
+
+      
+    <div class="field col">
+        <label for="direccionfacturacion">Direccion de facturacion</label>
+        <input pInputText id="direccionfacturacion" [(ngModel)]="client.direccionfacturacion" />
+    </div>
+    <p-button
+      label="Guardar"
+      icon="pi pi-check"
+      (onClick)="saveClient()"
+    ></p-button>
+  </div>
+  

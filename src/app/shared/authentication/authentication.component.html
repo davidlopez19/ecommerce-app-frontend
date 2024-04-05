@@ -1,0 +1,42 @@
+<p-card>
+  <div class="text-center mb-5">
+    <span class="text-700 text-xl font-medium">Inicio de sesión</span>
+  </div>
+
+  <div
+    class="w-full surface-card py-5 px-5 sm:px-8"
+    style="border-radius: 53px"
+  >
+    <label for="email" class="block text-700 text-lg font-medium mb-2"
+      >Email/Usuario</label
+    >
+    <input
+      id="email"
+      type="text"
+      placeholder="Email/Usuario"
+      pInputText
+      class="w-full md:w-40rem mb-5"
+      [(ngModel)]="loginModel.email"
+    />
+
+    <label for="password" class="block text-700 font-medium text-lg mb-2"
+      >Password</label
+    >
+    <input
+      pInputText
+      id="password"
+      type="password"
+      placeholder="Passsword"
+      [(ngModel)]="loginModel.password"
+      class="w-full md:w-40rem mb-5"
+    />
+    <p-button class="w-full p-3 text-xl" (onClick)="login()">Entrar</p-button>
+    <!-- <button
+      pButton
+      pRipple
+      label="Entrar"
+      class="w-full p-3 text-xl"
+      (Click)="login()"
+    ></button> -->
+  </div>
+</p-card>
